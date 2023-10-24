@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dossier Marina</title>
     <style>
@@ -16,17 +17,14 @@
         }
 
         .gallery {
-            max-width: 1200px;
-            margin: 50px auto;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            grid-gap: 16px;
+            gap: 10px; /* Add space between images if desired */
         }
 
         .gallery img {
             width: 100%;
-            border-radius: 5px;
-            transition: transform 0.3s ease-in-out;
+            height: auto;
         }
 
         .gallery img:hover {
@@ -37,13 +35,116 @@
 </head>
 <body>
     <div class="gallery">
-        <!-- Display images in rows of 4 -->
-        <% for (let i = 1; i <= 28; i++) { %>
-            <img src="images/<%= i %>.jpg.webp" alt="Image <%= i %>">
-        <% } %>
+        <a href="images/1.jpg.webp" data-lightbox="gallery">
+            <img src="images/1.jpg.webp" alt="Image 1">
+        </a>
+        
+        <a href="images/2.jpg.webp" data-lightbox="gallery">
+            <img src="images/2.jpg.webp" alt="Image 2">
+        </a>
+        
+        <a href="images/3.jpg.webp" data-lightbox="gallery">
+            <img src="images/3.jpg.webp" alt="Image 3">
+        </a>
+
+        <a href="images/4.jpg.webp" data-lightbox="gallery">
+            <img src="images/4.jpg.webp" alt="Image 4">
+        </a>
+
+        <a href="images/5.jpg.webp" data-lightbox="gallery">
+            <img src="images/5.jpg.webp" alt="Image 5">
+        </a>
+
+        <a href="images/6.jpg.webp" data-lightbox="gallery">
+            <img src="images/6.jpg.webp" alt="Image 6">
+        </a>
+
+        <a href="images/7.webp" data-lightbox="gallery">
+            <img src="images/7.webp" alt="Image 7">
+        </a>
+
+        <a href="images/8.jpg.webp" data-lightbox="gallery">
+            <img src="images/8.jpg.webp" alt="Image 8">
+        </a>
+
+        <a href="images/9.webp" data-lightbox="gallery">
+            <img src="images/9.webp" alt="Image 9">
+        </a>
+
+        <a href="images/11.jpg.webp" data-lightbox="gallery">
+            <img src="images/11.jpg.webp" alt="Image 11">
+        </a>
+
+        <a href="images/12.jpg.webp" data-lightbox="gallery">
+            <img src="images/12.jpg.webp" alt="Image 12">
+        </a>
+
+        <a href="images/13.jpg.webp" data-lightbox="gallery">
+            <img src="images/13.jpg.webp" alt="Image 13">
+        </a>
+
+        <a href="images/14.jpg.webp" data-lightbox="gallery">
+            <img src="images/14.jpg.webp" alt="Image 14">
+        </a>
+
+        <a href="images/15.webp" data-lightbox="gallery">
+            <img src="images/15.webp" alt="Image 15">
+        </a>
+
+        <a href="images/16.webp" data-lightbox="gallery">
+            <img src="images/16.webp" alt="Image 16">
+        </a>
+
+        <a href="images/17.jpg.webp" data-lightbox="gallery">
+            <img src="images/17.jpg.webp" alt="Image 17">
+        </a>
+
+        <a href="images/18.png.webp" data-lightbox="gallery">
+            <img src="images/18.png.webp" alt="Image 18">
+        </a>
+
+        <a href="images/19.jpg.webp" data-lightbox="gallery">
+            <img src="images/19.jpg.webp" alt="Image 19">
+        </a>
+
+        <a href="images/20.jpg.webp" data-lightbox="gallery">
+            <img src="images/20.jpg.webp" alt="Image 20">
+        </a>
+
+        <a href="images/21.webp" data-lightbox="gallery">
+            <img src="images/21.webp" alt="Image 21">
+        </a>
+
+        <a href="images/22.jpg.webp" data-lightbox="gallery">
+            <img src="images/22.jpg.webp" alt="Image 22">
+        </a>
+
+        <a href="images/23.jpg.webp" data-lightbox="gallery">
+            <img src="images/23.jpg.webp" alt="Image 23">
+        </a>
+
+        <a href="images/24.jpg.webp" data-lightbox="gallery">
+            <img src="images/24.jpg.webp" alt="Image 24">
+        </a>
+
+        <a href="images/25.jpg.webp" data-lightbox="gallery">
+            <img src="images/25.jpg.webp" alt="Image 25">
+        </a>
+
+        <a href="images/26.jpg.webp" data-lightbox="gallery">
+            <img src="images/26.jpg.webp" alt="Image 26">
+        </a>
+
+        <a href="images/27.jpg.webp" data-lightbox="gallery">
+            <img src="images/27.jpg.webp" alt="Image 27">
+        </a>
+
+        <a href="images/28.jpg.webp" data-lightbox="gallery">
+            <img src="images/28.jpg.webp" alt="Image 28">
+        </a>
     </div>
 
     <!-- Optional: Include a JavaScript library to expand on hover functionality (like Lightbox) -->
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
